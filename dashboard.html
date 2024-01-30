@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS>>internal&External</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <style>
+        /*internal embed*/
+        p{
+            font-style: italic;
+            font-family: "Prompt", sans-serif; /*google font*/
+            text-align: justify;
+        }
+        /*universal selector*/
+        h1{
+            font-family: "Itim", cursive;/*google font*/
+            text-align: center;
+        }
+        #mass{
+            font-size: medium;
+            font-weight: 800;
+        }
+        .title{
+            font-size: 40px;
+            text-align: center;
+        }
+        /* div{  
+            color: hsl(0, 45%, 46%);
+            font-weight: 800;
+        } 
+        div{
+            width: 100px;
+            height: 100px; 
+        }
+        /* เส้นขอบ */
+        .box1{
+            width: 100px;
+            height: 100px; 
+        
+            background-color:#eaff00 ;
+            border:solid 5px gray;
+            /*border-radius: 10px;*/
+            border-top-right-radius: 50px;
+        }
+        .box2{
+            width: 1040px;
+            height: 200px; 
+        
+            background-image: url(https://th.bing.com/th/id/OIP.F9B0fBLVndj9JE6Q2RlWuQHaHa?w=172&h=180&c=7&r=0&o=5&pid=1.7);
+            background-repeat: repeat-x;/*ทำซ้ำตามแกนx*/
+            background-attachment: scroll;
+            border-style: solid;
+        }
+        .box3{
+            width: 1300px;
+            height: 250px; 
+            background:  url(pic/OIP.jpg)  no-repeat center center ;
+           /* background-image: url(pic/OIP.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            /*background-color:orangered ;
+            background-size: cover;*/
+            border: dashed 5px gray;
+            border-top-style: solid;
+            opacity: 0.3;
+        }
+        .box4{
+            width: 1000px;
+            height: 100px; 
+            border: dotted 5px ;
+            border-color: #730e0e;
+            border-left-color: purple;
+            margin-top: 15px;
+            margin-left: 150px;
+            padding: 10px 25px ;
+            overflow: scroll;
+        }
+        .link{
+           /* text-decoration: none;*/
+            font-size: 20px;
+            float: right;
+            
+        }
+        a:link{
+            color: blue;
+        }
+        a:hover{
+            color: #f01414;
+        }
+        a:visited{
+            color: #f0750f;
+        }
+        a:active{
+            background-color: #eaff00;
+
+        }
+        img{
+            float: none;
+            margin-left: 450px;
+            border:solid ;
+            border-width: 10px;
+            width: 5cm;
+            min-width: none;
+            max-width: 7cm;
+            height: 7cm;
+            min-height: 3cm;
+            max-height: 10cm;
+            box-shadow: 5px 5px 10px 3px rgb(112, 154, 240);
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        button{
+            text-align: center;
+            width: 50px;
+            height: 30px;
+        }
+        .picT{
+            width: 960px;
+            margin: 30px auto;
+        }
+        .PP{
+            line-height: 14px;
+            color: blue;
+            border: solid;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #p2{
+            float: left;
+            width: 50%;
+        }
+        #p3{
+            
+            float: right;
+            width: 50%;
+        }
+        li{
+            display: inline;
+        }
+        li a{
+            padding: 10px;
+            text-decoration: none;
+        }
+        .V{
+            width: 100px;
+            height: 100px; 
+        
+            background-color:hsl(312, 71%, 62%) ;
+            border:solid 5px;
+            /*border-radius: 10px;*/
+            visibility: hidden;
+            /*visibility: visible;*/
+           
+        }
+        .L{
+            width: 500px;
+            height: 500px;
+            background-color: darkgray;
+        }
+        #n1{
+            width: 100px;
+            height: 100px;  
+            border:solid 5px;
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+            top: 50px;
+            left: 10px;
+            z-index: 1;/*อยู่หน้า 0 อยู่หลัง*/
+            
+        }
+        #n2{
+            width: 100px;
+            height: 100px;  
+            border:solid 5px;
+            display: inline-block;
+            padding: 10px;
+            position: sticky;
+            top: 50px;
+        }
+        #n3{
+            width: 100px;
+            height: 100px;  
+            border:solid 5px;
+            display: inline-block;
+            padding: 10px;
+            position: absolute;
+            top: 2500px;
+            left: 70px;
+            z-index: 1;
+        }
+        #n4{
+            width: 100px;
+            height: 100px;  
+            border:solid 5px;
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+            top: 50px;
+            
+        }
+        *{
+            background-color: rgb(227, 215, 230);
+            box-sizing: border-box;
+        }
+    </style> 
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+</head>
+<body>
+    <div class="link">
+        <a href="https://www.google.com/?hl=ar">click</a>
+    </div>
+    
+    <li> <a href="https://www.google.com/?hl=ar">A</a></li>
+    <li> <a href="https://www.google.com/?hl=ar">B</a></li>
+    <li> <a href="https://www.google.com/?hl=ar">C</a></li>
+    <img src="https://th.bing.com/th/id/OIP.dLNBxINIoZfqGZeDNOs7WQHaHa?w=167&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+    <!--Inline -->
+    <p style="color: blue;font-weight: bolder;">Pattapron</p>
+    <h1>internal</h1>
+    <h1 class="title">External</h1>
+    <hr>
+    <p id="mass">Internal and external refer to different aspects of a company or organization123.Internal refers to factors, events, conditions, etc. that exist inside the company and have the capability to influence the company’s strategic decisions and functions12. Internal communication occurs when the members of an organization exchange information with each other3. Internal hard drives are installed inside your computer and come with a variety of benefits that include larger storage capacity, ease of formatting, and protection inside your computer4.External refers to factors that do not exist within the company but can affect the company’s operations, decisions, survival, growth and profitability12. External communication takes place when members of an organization interact and communicate with an outside party3. External hard drives are outside your computer and can be used to store data4.
+    </p>
+    <hr>
+    <!-- <div>CSS3</div> -->
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" placeholder="...........">
+    </form>
+   
+    <br>
+    <button>ok</button>
+    <br>
+    <br>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4">
+        <p>Internal and external refer to different aspects of a company or organization123.Internal refers to factors, events, conditions, etc. that exist inside the company and have the capability to influence the company’s strategic decisions and functions12. Internal communication occurs when the members of an organization exchange information with each other3. Internal hard drives are installed inside your computer and come with a variety of benefits that include larger storage capacity, ease of formatting, and protection inside your computer4.External refers to factors that do not exist within the company but can affect the company’s operations, decisions, survival, growth and profitability12. External communication takes place when members of an organization interact and communicate with an outside party3. External hard drives are outside your computer and can be used to store data4.</p>
+    </div>
+    <div class="picT">
+        <div id="p1" class="PP">
+            <h1>text</h1>
+            <p>Internal and external refer to different aspects of a company or organization123.Internal refers to factors, events, conditions, etc. that exist inside the company and have the capability to influence the company’s strategic decisions and functions12. Internal communication occurs when the members of an organization exchange information with each other3. Internal hard drives are installed inside your computer and come with a variety of benefits that include larger storage capacity, ease of formatting, and protection inside your computer4.External refers to factors that do not exist within the company but can affect the company’s operations, decisions, survival, growth and profitability12. External communication takes place when members of an organization interact and communicate with an outside party3. External hard drives are outside your computer and can be used to store data4.</p>
+        </div>
+        <div id="p2" class="PP">
+            <h1>text</h1>
+            <p>Internal and external refer to different aspects of a company or organization123.Internal refers to factors, events, conditions, etc. that exist inside the company and have the capability to influence the company’s strategic decisions and functions12. Internal communication occurs when the members of an organization exchange information with each other3. Internal hard drives are installed inside your computer and come with a variety of benefits that include larger storage capacity, ease of formatting, and protection inside your computer4.External refers to factors that do not exist within the company but can affect the company’s operations, decisions, survival, growth and profitability12. External communication takes place when members of an organization interact and communicate with an outside party3. External hard drives are outside your computer and can be used to store data4.</p>
+        </div>
+        <div id="p3" class="PP">
+            <h1>text</h1>
+            <p>Internal and external refer to different aspects of a company or organization123.Internal refers to factors, events, conditions, etc. that exist inside the company and have the capability to influence the company’s strategic decisions and functions12. Internal communication occurs when the members of an organization exchange information with each other3. Internal hard drives are installed inside your computer and come with a variety of benefits that include larger storage capacity, ease of formatting, and protection inside your computer4.External refers to factors that do not exist within the company but can affect the company’s operations, decisions, survival, growth and profitability12. External communication takes place when members of an organization interact and communicate with an outside party3. External hard drives are outside your computer and can be used to store data4.</p>
+        </div>
+    </div>
+    <div class="V"></div>
+
+        <div id="n1"></div>
+    <div class="L">
+        <div id="n2"></div>
+        <div id="n3"></div>
+    </div>
+      
+        <div id="n4"></div>
+    
+</body>
+</html>
